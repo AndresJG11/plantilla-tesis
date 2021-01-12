@@ -1,0 +1,59 @@
+\documentclass[a4paper,12pt, openany]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\usepackage[spanish, es-tabla]{babel}
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{0.9}
+\usepackage{amsfonts}
+\usepackage{verbatim} % comentarios
+\usepackage{fancyhdr} % Encabezados
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{ amssymb }
+\usepackage{multirow}
+\usepackage{pdflscape}
+\usepackage{makecell}
+\usepackage{amsmath}
+\usepackage{subfig}
+
+\renewcommand{\arraystretch}{1.5}
+
+\renewcommand{\chaptername}{Capítulo}
+\renewcommand{\contentsname}{Contenido}
+
+\def\TITULO{Redes generativas adversarias para la segmentación de nervios periféricos} 
+\def\FECHA{Fecha} 
+
+
+\begin{document}
+
+\include{pages/portada/portada}
+\include{pages/agradecimientos/agradecimientos}
+\include{pages/resumen/resumen}
+\include{pages/abstract/abstract}
+\include{pages/glosario/glosario}
+
+\tableofcontents
+
+\include{pages/planteamiento_del_problema/planteamiento_problema}
+\include{pages/justificacion/justificacion}
+\include{pages/estado_del_arte/estado_arte}
+\include{pages/objetivos/objetivos}
+\include{pages/materiales_metodos/materiales_metodos}
+\include{pages/resultados_discusion/resultados_discusion}
+\include{pages/conclusion_trabajos_futuros/conclusion_futuros}
+\include{pages/publicaciones}
+
+
+
+% Hacer capitulo de publicaciones (simposio)
+
+\backmatter
+% bibliography, glossary and index would go here.
+
+
+\bibliographystyle{ieeetr}
+\bibliography{bib/biblio}
+
+\end{document}
